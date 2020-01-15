@@ -1,0 +1,8 @@
+<div class="container pt-5 text-center">
+  <h1 class="display-2">投稿一覧</h1>
+  <% @posts.each do |post| %>
+  <h2>タイトル:<%= post.title %></h2>
+  <h2>コンテンツ:<%= post.content %></h2>
+  <br>
+  <% end %>
+</div>

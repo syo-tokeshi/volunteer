@@ -1,0 +1,13 @@
+
+<div class="container">
+    <%= form_for @post do |f| %>
+    <div class="form-group">
+    <h3>タイトル <%= f.text_field :title,class:"form-control" %></h3>
+    </end>
+    <div class="form-group">
+     <h3>コンテンツ<%= f.text_area :content,class:"form-control" %></h3>
+    </end>
+    <br>
+      <%= f.submit class:"btn btn-info form-control" %>
+      <% end %>
+</div>
